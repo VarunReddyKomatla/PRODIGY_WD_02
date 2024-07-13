@@ -65,4 +65,10 @@ function stopwatch() {
 		let countString = count < 10 ? "0" + count : count;
 
 		document.getElementById("hr").innerHTML = hrString;
-		document.get
+		document.getElementById("min").innerHTML = minString;
+		document.getElementById("sec").innerHTML = secString;
+		document.getElementById("count").innerHTML = countString;
+		
+		setTimeout(stopwatch, 10);
+	}
+}
